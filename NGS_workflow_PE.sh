@@ -64,6 +64,6 @@ for item in *.bam
 	done
 printf "=%.0s" {1..80}; printf "\n\n"
 
-printf "$(date)\tPIPELINE IS COMPLETED\n\n"
+printf "$(date)\tPIPELINE IS COMPLETE\n\n"
 
 } 2>&1 | tee ${outpath}NGS_workflow.log

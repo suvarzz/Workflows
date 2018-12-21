@@ -325,5 +325,5 @@ printf "=%.0s" {1..70}; printf "\n\n"
 # remove unzipped bdg files
 for item in *.bdg; do rm $item; done
 
-printf "$(date)\tPIPELINE IS COMPLETED\n\n"
+printf "$(date)\tPIPELINE IS COMPLETE\n\n"
 } 2>&1 | tee ${outpath}ChIPseq-HU-SR-pipeline.log

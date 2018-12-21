@@ -91,5 +91,5 @@ for item in *.fastq.gz
 		printf "\n$(date)\tCompleted Salmon alignment and count of ${item}\n"
 	done
 
-printf "$(date)\tPIPELINE IS COMPLETED\n\n"
+printf "$(date)\tPIPELINE IS COMPLETE\n\n"
 } 2>&1 | tee ${outpath}RNAseq_pipeline.log
