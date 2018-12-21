@@ -325,22 +325,5 @@ printf "=%.0s" {1..70}; printf "\n\n"
 # remove unzipped bdg files
 for item in *.bdg; do rm $item; done
 
-##### BDG Normalization
-
-# cd ${outpath}bdg
-# mkdir ${outpath}norm-bdg
-# for item in *.bdg
-# 	do
-# 		# Read and calculate coeffiecient
-# 		coeff=###
-# 		awk -v c=$coeff '$4=$4*$coeff' $item > ${outpath}norm-bdg/${item}
-# 	done
-
-# #####=======================================================
-
-##### TURN OFF COMPUTER AFTER ANALYSIS?
-# sleep 100
-# poweroff
-
 printf "$(date)\tPIPELINE IS COMPLETED\n\n"
 } 2>&1 | tee ${outpath}ChIPseq-HU-SR-pipeline.log
